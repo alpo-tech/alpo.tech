@@ -1,7 +1,18 @@
 body {
-  background-color: #1d1f21;
-  color: #2bbc8a;
-  font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #1d1f21;
+    flex: 1;
+    font-display: swap;
+    font-family: Oxygen, monospace;
+    font-size: 14px;
+    font-weight: 500;
+    height: 100%;
+    line-height: 1.725;
+    margin: 0 auto;
+    max-width: 72rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-rendering: geometricPrecision;
 }
 
 .title {
@@ -15,7 +26,42 @@ body {
   margin-top: -4px;
 }
 
+.content {
+    color: #c9cacc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow-wrap: break-word;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    position: relative;
+    font-weight: 700;
+    font-stretch: expanded; /* Вытянуть шрифт */
+}
+
 .link {
   color: #c9cacc;
   text-decoration: none;
+}
+
+h1 {
+    color: #2bbc8a; 
+}
+
+.no-underline {
+    text-decoration: none; /* убирает подчеркивание ссылки */
+}
+
+.fa-github::before {
+    content: '\f09b'; /* код для иконки github в шрифте fontawesome (если используется) */
+    font-family: 'fontawesome'; /* указываем, что используем fontawesome */
+    color: #c9cacc; /* цвет иконки, можно заменить на любой */
+    font-size: 200% !important;
+    width: 1em;
+    vertical-align: middle;
+}
+
+.no-underline:hover .fa-github::before {
+    color: #e35f77; /* Цвет при наведении */
 }
