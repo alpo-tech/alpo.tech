@@ -18,5 +18,5 @@ func main() {
 		ctx.HTML(http.StatusOK, "index.html", nil)
 	})
 
-	router.Run("localhost:8686")
+	router.Run("0.0.0.0:8686")
 }
