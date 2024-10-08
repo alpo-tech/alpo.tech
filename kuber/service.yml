@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: alpo-blog-svc
+  namespace: monitoring
+  labels:
+    app: alpo-blog
+spec:
+  type: ClusterIP
+  selector:
+    app: alpo-blog
+  ports:
+  - port: 80
+    targetPort: 8686
+    protocol: TCP
