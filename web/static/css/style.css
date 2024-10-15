@@ -117,4 +117,36 @@ h1, h2 {
 }
 
 
+/* Медиа-запросы для адаптации под мобильные устройства */
+@media (max-width: 1200px) {
+    .carousel-item {
+        flex: 0 0 22%; /* 4 книги на экране */
+    }
 
+    .prev, .next {
+        left: -20px;
+        right: -20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-item {
+        flex: 0 0 30%; /* 3 книги на экране */
+    }
+
+    .prev, .next {
+        left: -10px;
+        right: -10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-item {
+        flex: 0 0 45%; /* 2 книги на экране */
+    }
+
+    .prev, .next {
+        left: 5px;
+        right: 5px;
+    }
+}
