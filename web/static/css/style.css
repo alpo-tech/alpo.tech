@@ -71,6 +71,19 @@ h1, h2 {
     vertical-align: middle;
 }
 
+.fa-twitter::before {
+    content: '\e61a';
+    font-family: 'fontawesome'; /* указываем, что используем fontawesome */
+    color: #c9cacc; /* цвет иконки, можно заменить на любой */
+    font-size: 140% !important;
+    width: 1em;
+    vertical-align: middle;
+}
+
+.no-underline:hover .fa-twitter::before {
+  color: #e35f77;
+}
+
 .no-underline:hover .fa-linkedin::before {
   color: #e35f77;
 }
