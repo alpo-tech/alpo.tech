@@ -26,6 +26,10 @@ body {
   margin-top: -4px;
 }
 
+.data-article {
+  color: #666
+}
+
 .content {
     color: #c9cacc;
     box-sizing: border-box;
@@ -92,8 +96,20 @@ h1, h2 {
     color: #e35f77; /* Цвет при наведении */
 }
 
+
 .article {
-  color: #c9cacc;
+  color: #c9cacc; 
+  position: relative; /* Устанавливаем относительное позиционирование */
+}
+
+.article:hover::before {
+  content: ""; /* Псевдоэлемент без текста */
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.5px; /* Толщина подчеркивания */
+  background-color: #e35f77; /* Цвет подчеркивания */
 }
 
 
