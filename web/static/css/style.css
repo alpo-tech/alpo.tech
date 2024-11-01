@@ -120,8 +120,7 @@ h1, h2 {
     position: relative;
 }
 
-.carousel-track {
-    display: flex;
+.carousel-track { display: flex;
     transition: transform 0.5s ease;
 }
 
@@ -193,4 +192,46 @@ h1, h2 {
         left: 5px;
         right: 5px;
     }
+}
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #1d1f21; /* Dark background */
+    color: #666; /* Light gray text */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Optional: max width for better alignment */
+    margin: 0 auto;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-link {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-divider {
+    color: #666; /* Darker gray for the divider */
 }
