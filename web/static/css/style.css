@@ -92,7 +92,9 @@ h1, h2 {
     color: #e35f77; /* Цвет при наведении */
 }
 
-
+.article {
+  color: #c9cacc;
+}
 
 
 .carousel-container {
