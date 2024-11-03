@@ -20,7 +20,11 @@ func main() {
 
 	router.GET("nvim-configuration", func(ctx *gin.Context) {
 		ctx.HTML(http.StatusOK, "nvim-configuration.html", nil)
-	}) 
+	})
+
+	router.GET("contact", func(ctx *gin.Context) {
+		ctx.HTML(http.StatusOK, "contact.html", nil)
+	})	
 
 	router.Run("0.0.0.0:8686")
 }
