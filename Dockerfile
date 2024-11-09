@@ -28,4 +28,4 @@ ENTRYPOINT ["./alpo-blog"]
 
 
 
-#docker buildx build --platform linux/amd64 -t lcash/go-simple-app . --push
+#docker buildx build --platform linux/amd64 -t lcash/alpo-blog . --push
